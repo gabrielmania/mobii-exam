@@ -6,9 +6,8 @@ require("dotenv").config();
 const connection = mysql.createConnection({
   host: process.env.HOST,
   user: "root",
-  database: "mobiiDb",
+  database: "mobii_examdb",
   password: process.env.PASSWORD,
-  port: "6680",
 });
 
 // delete all rows in the database before inserting new seeds

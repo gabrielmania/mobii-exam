@@ -10,9 +10,8 @@ app.use(express.json());
 const connection = mysql.createConnection({
   host: process.env.HOST,
   user: "root",
-  database: "mobiiDb",
+  database: "mobii_examdb",
   password: process.env.PASSWORD,
-  port: "6680",
 });
 
 // postToDb is a function that will create the entry into the database
